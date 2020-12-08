@@ -1,0 +1,255 @@
+body {
+    font-family: Arial, helvetica, sans-serif;
+  }
+  
+  /* these are used to resize font-icons when necessary */
+  .s12 { font-size: 12px; }
+  .s16 { font-size: 16px; }
+  .s20 { font-size: 20px; }
+  .s24 { font-size: 24px; }
+  .s32 { font-size: 32px; }
+  .s48 { font-size: 48px; }
+  
+  .navbar { border-radius:0; }
+  .nav.navbar-nav.navbar-right { margin-right: 8px; }
+  
+  /* required to put dialogs over the map */
+  md-backdrop.md-dialog-backdrop { z-index: 999; }
+  .md-dialog-container { z-index: 1000; }
+  
+  .main-menu { z-index: 10000; }
+  [@role="tooltip"] { z-index: 11000; }
+  
+  .active { color: red; font-weight: bold }
+  
+  .flex-h {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+  }
+  
+  div.alert-container {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 99999; 
+      border-radius: 0px
+  }
+  
+  label { overflow: visible !important; }
+  
+  div.tabContent {
+      background-color: #f8f8f8;
+  }
+  
+  md-sidenav {
+    overflow: visible;
+  }
+  
+  .md-toolbar-tools[draggable=true] {
+      cursor: pointer;
+  }
+  
+  md-backdrop.md-select-backdrop {
+      z-index:1051;
+  }
+  
+  .md-select-menu-container {
+      z-index:1052;
+  }
+  
+  .md-virtual-repeat-container.md-autocomplete-suggestions-container {
+      z-index:1051;
+  }
+  
+  div.md-toolbar-tools md-input-container {
+      background-color: rgb(255,255,255);
+  }
+  div.md-toolbar-tools md-input-container md-select-value .md-text {
+      color: rgb(0,0,0);
+  }
+  
+  
+  img.thumbnail {
+      width: 96px;
+      height: 96px;
+      object-fit: scale-down;
+  }
+  .md-sidenav-left .preview {
+      height: 196px;
+      width: 196px;
+      object-fit: scale-down;
+  }
+  
+  
+  search-people-comp,
+  locate-comp,
+  demo-comp {
+      height: 100%;
+  }
+  locate-comp .viewBody,
+  demo-comp .viewBody {
+      width: 100%;
+  }
+  
+  bf-table .watermark {
+      font-size: 12px;
+  }
+  
+  .easy-button-button.selected {
+      background-color: #c8c8ff;
+  }
+  .easy-button-button.selected:hover {
+      background-color: #d8d8ff;
+  }
+  .md-sidenav-backdrop {
+      z-index: 9999;
+  }
+  
+  /* debug */
+  /*
+  locate-comp .layout-column,
+  locate-comp .layout-row {
+      background-color: rgba(0,0,0,0.05);
+  }
+  */
+  
+  /************************************************
+   * editor area
+   ***********************************************/
+  div#editArea {
+      position: relative;
+  }
+  
+  section.editorToolbar {
+      display: block;
+      position: absolute;
+      top: 4px;
+      left: 20px;
+      margin: 0px;
+      padding: 0px;
+      background-color: transparent;
+      color: rgb(49, 46, 46);
+      text-transform: none;
+      font-size: 16px;
+      font-weight: 400;
+      z-index: 1048;
+  }
+  
+  .editorToolbar.md-button {
+      display: block;
+      min-height: 48px;
+      min-width: 48px;
+      background-color: white;
+      margin: 0px;
+  }
+  
+  .editorToolbar.md-button.top {
+      border-radius: 10px 10px 0 0;
+      border-top: 1px solid black;
+      border-left: 1px solid black;
+      border-right: 1px solid black;
+  }
+  
+  .editorToolbar.md-button.middle {
+      border-radius: 0;
+      border-left: 1px solid black;
+      border-right: 1px solid black;
+  }
+  
+  .editorToolbar.md-button.bottom {
+      border-radius: 0 0 10px 10px;
+      border-left: 1px solid black;
+      border-bottom: 1px solid black;
+      border-right: 1px solid black;
+  }
+  
+  .editorToolbar.md-button.single {
+      border-radius: 10px 10px 10px 10px;
+      border: 1px solid black;
+  }
+  
+  .editorToolbar.md-button:not([disabled]):hover {
+      background-color: white;
+      color: rgb(44, 65, 164);
+      transition: 0.3s;
+  }
+  .editorToolbar.md-button:not([disabled]).md-focused {
+      background-color: white;
+      color: rgb(44, 65, 164);
+      transition: 0.3s;
+  }
+  
+  section.zoomToolbar {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      margin: 0px;
+      padding: 0px;
+      background-color: transparent;
+      color: rgb(49, 46, 46);
+      text-transform: none;
+      font-size: 16px;
+      font-weight: 400;
+      z-index: 1048;
+  }
+  
+  md-grid-tile-footer > figcaption { width: 100%; min-width: 100%; }
+  
+  section.zoneToolbar {
+      display: block;
+      position: absolute;
+      top: calc(50% - 80px);
+      left: 20px;
+      margin: 0px;
+      padding: 0px;
+      background-color: transparent;
+      color: rgb(49, 46, 46);
+      text-transform: none;
+      font-size: 16px;
+      font-weight: 400;
+      z-index: 1048;
+  }
+  
+  section.editorHelp {
+      display: block;
+      position: absolute;
+      top: 20px;
+      left: calc(30% / 2);
+      width: calc(70%);
+      text-align: center;
+      margin: 0px;
+      padding: 0px;
+      background-color: white;
+      color: rgb(49, 46, 46);
+      text-transform: none;
+      font-size: 16px;
+      font-weight: 400;
+      z-index: 1048;
+      border-radius: 5px;
+      border: 1px solid black;
+  }
+  
+  section.breadcrumb {
+      display: block;
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      margin: 0px;
+      padding: 4px;
+      background-color: white;
+      color: rgb(49, 46, 46);
+      text-transform: none;
+      font-size: 16px;
+      font-weight: 400;
+      z-index: 1048;
+      border-radius: 5px;
+      border: 1px solid black;
+  }
+  
+  md-grid-tile-header figcaption, md-grid-tile-footer figcaption  {
+      width: 100%;
+  }
+  
