@@ -186,6 +186,7 @@ define([
             });
             */
         }
+          
 
 
         function fetchCurrentAlarms() {
